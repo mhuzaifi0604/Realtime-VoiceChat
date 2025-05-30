@@ -1,7 +1,6 @@
 # 🎙️ React Voice Chat Assistant
 
 [![npm version](https://badge.fury.io/js/realtime-voicechat.svg)](https://badge.fury.io/js/realtime-voicechat)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Downloads](https://img.shields.io/npm/dm/realtime-voicechat.svg)](https://npmjs.org/package/realtime-voicechat)
 
 A powerful, fully configurable React component that provides instant voice chat functionality powered by OpenAI's Realtime API. Instead of building voice chat from scratch, simply import and configure this component to add natural, human-like voice conversations to your application.
@@ -246,10 +245,6 @@ Fine-tune when the AI responds by adjusting these parameters:
 - ✅ Firefox 84+
 - ✅ Safari 14.1+
 - ✅ Edge 88+
-
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) file for details.
 
 ## 🤝 Contributing
 
