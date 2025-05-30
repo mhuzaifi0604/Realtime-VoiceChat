@@ -105,23 +105,23 @@ Choose from multiple pre-built UI designs:
 
 ### v1 - Classic Animated Blob
 Classic animated blob with pulse effects
-![UI Version 1](./uiVersions/V1.png)
+![UI Version 1](https://raw.githubusercontent.com/mhuzaifi0604/Realtime-VoiceChat/main/uiVersions/V1.png)
 
 ### v2 - Modern Gradient Blob  
 Modern gradient blob with smooth animations
-![UI Version 2](./uiVersions/V2.png)
+![UI Version 2](https://raw.githubusercontent.com/mhuzaifi0604/Realtime-VoiceChat/main/uiVersions/V2.png)
 
 ### v3 - Geometric Animated Shapes
 Geometric animated shapes with color transitions
-![UI Version 3](./uiVersions/V3.png)
+![UI Version 3](https://raw.githubusercontent.com/mhuzaifi0604/Realtime-VoiceChat/main/uiVersions/V3.png)
 
 ### v4 - Advanced Particle System
 Advanced particle system with dynamic effects
-![UI Version 4](./uiVersions/V4.png)
+![UI Version 4](https://raw.githubusercontent.com/mhuzaifi0604/Realtime-VoiceChat/main/uiVersions/V4.png)
 
 ### v5 - Advanced Wave Particle System
 Advanced particle system with dynamic effects
-![UI Version 4](./uiVersions/V5.png)
+![UI Version 5](https://raw.githubusercontent.com/mhuzaifi0604/Realtime-VoiceChat/main/uiVersions/V5.png)
 
 ###### This one is the best in my opionion 😁
 
