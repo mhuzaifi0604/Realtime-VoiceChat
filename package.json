@@ -1,6 +1,6 @@
 {
   "name": "realtime-voice-ai",
-  "version": "1.0.0",
+  "version": "2.3.8",
   "description": "A powerful, fully configurable React component for real-time voice chat powered by OpenAI's Realtime API. Create natural conversations with AI using advanced voice recognition and synthesis.",
   "main": "src/index.js",
   "types": "src/index.d.ts",
@@ -55,12 +55,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/huzaifi0604/react-realtime-voicechat.git"
+    "url": "git+https://github.com/mhuzaifi0604/Realtime-VoiceChat"
   },
   "bugs": {
-    "url": "https://github.com/huzaifi0604/react-realtime-voicechat/issues"
+    "url": "https://github.com/mhuzaifi0604/Realtime-VoiceChat/issues"
   },
-  "homepage": "https://github.com/huzaifi0604/react-realtime-voicechat#readme",
+  "homepage": "https://github.com/mhuzaifi0604/Realtime-VoiceChat#readme",
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
