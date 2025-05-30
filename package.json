@@ -1,36 +1,78 @@
 {
-  "name": "realtime-voicechat",
-  "version": "2.3.7",
-  "type": "module",
+  "name": "realtime-voice-ai",
+  "version": "1.0.0",
+  "description": "A powerful, fully configurable React component for real-time voice chat powered by OpenAI's Realtime API. Create natural conversations with AI using advanced voice recognition and synthesis.",
   "main": "src/index.js",
   "types": "src/index.d.ts",
+  "files": [
+    "src/",
+    "uiVersions/",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "voice-chat",
+    "realtime-voice-chat",
+    "openai",
+    "realtime-api",
+    "ai",
+    "voice-assistant",
+    "speech-recognition",
+    "audio",
+    "chatbot",
+    "conversational-ai",
+    "voice-ai",
+    "speech-to-text",
+    "text-to-speech",
+    "real-time-communication",
+    "voice-interface",
+    "ai-assistant",
+    "voice-control",
+    "speech-synthesis",
+    "voice-interaction",
+    "muhammad-huzaifa",
+    "huzaifi0604", 
+    "mhuzaifi0604",
+    "huzaifa",
+    "voice-chat-component",
+    "react-voice-chat",
+    "openai-voice-chat",
+    "ai-voice-chat",
+    "realtime-audio",
+    "voice-enabled-ui",
+    "speech-interface",
+    "voice-powered",
+    "conversational-interface"
+  ],
+  "author": {
+    "name": "Muhammad Huzaifa",
+    "email": "huzzaifaasim@gmail.com",
+    "url": "https://github.com/mhuzaifi0604"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huzaifi0604/react-realtime-voicechat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/huzaifi0604/react-realtime-voicechat/issues"
+  },
+  "homepage": "https://github.com/huzaifi0604/react-realtime-voicechat#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.7.2",
-    "@fortawesome/free-solid-svg-icons": "^6.7.2",
-    "@fortawesome/react-fontawesome": "^0.2.2",
-    "axios": "^1.9.0",
-    "lucide-react": "^0.511.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "lucide-react": "^0.511.0"
   },
-  "devDependencies": {
-    "@eslint/js": "^9.25.0",
-    "@types/react": "^19.1.2",
-    "@types/react-dom": "^19.1.2",
-    "@vitejs/plugin-react": "^4.4.1",
-    "autoprefixer": "^10.4.21",
-    "eslint": "^9.25.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.19",
-    "globals": "^16.0.0",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^4.1.7",
-    "vite": "^6.3.5"
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
