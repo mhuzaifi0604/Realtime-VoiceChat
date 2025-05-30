@@ -254,7 +254,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 If you encounter any issues or have questions:
 
-- 🐛 **Open an issue** on our [GitHub repository](https://github.com/your-username/realtime-voicechat/issues)
+- 🐛 **Open an issue** on our [GitHub repository](https://github.com/mhuzaifi0604/Realtime-VoiceChat/issues)
 - 📧 **Contact directly**: [huzzaifaasim@gmail.com](mailto:huzzaifaasim@gmail.com)
 
 ---
