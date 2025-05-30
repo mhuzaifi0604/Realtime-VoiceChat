@@ -1,6 +1,6 @@
 {
   "name": "realtime-voicechat",
-  "version": "0.0.0",
+  "version": "2.3.7",
   "type": "module",
   "main": "src/index.js",
   "types": "src/index.d.ts",
