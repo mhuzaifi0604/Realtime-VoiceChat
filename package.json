@@ -1,6 +1,6 @@
 {
   "name": "realtime-voice-ai",
-  "version": "2.3.8",
+  "version": "2.3.9",
   "description": "A powerful, fully configurable React component for real-time voice chat powered by OpenAI's Realtime API. Create natural conversations with AI using advanced voice recognition and synthesis.",
   "main": "src/index.js",
   "types": "src/index.d.ts",
@@ -34,7 +34,7 @@
     "speech-synthesis",
     "voice-interaction",
     "muhammad-huzaifa",
-    "huzaifi0604", 
+    "huzaifi0604",
     "mhuzaifi0604",
     "huzaifa",
     "voice-chat-component",
