@@ -28,7 +28,7 @@ yarn add realtime-voice-ai
 
 ```jsx
 import React from 'react';
-import { VoiceChatTrigger } from 'your-package-name';
+import { VoiceChatTrigger } from 'realtime-voice-ai';
 
 function App() {
   const config = {
