@@ -37,12 +37,12 @@ export const VoiceChatTrigger = ({
 
     return (
         <>
-            <button
+            {botType === 'rvc' && <button
                 onClick={handleOpen}
                 className="p-2 rounded-full hover:bg-gray-200 transition-colors duration-200 w-max"
             >
                 <AudioLines className="w-5 h-5 text-gray-600" />
-            </button>
+            </button>}
 
             {renderVoiceComponent()}
 

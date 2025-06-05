@@ -1,12 +1,19 @@
 import React, { useState, useRef } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMicrophone, faStop } from '@fortawesome/free-solid-svg-icons';
+import { Mic, Square, Loader2 } from 'lucide-react';
 import axios from 'axios';
 
-const VoiceAssistant = ({ apiKey, endpoint = 'https://vgynj1k6fi.execute-api.us-east-1.amazonaws.com/voice-process', onTranscriptionComplete, isDisabled }) => {
+const VoiceAssistant = ({ config = {} }) => {
+    const {
+        apiKey,
+        endpoint = 'https://vgynj1k6fi.execute-api.us-east-1.amazonaws.com/voice-process',
+        onTranscriptionComplete,
+        isDisabled = false
+    } = config;
+
     const [isRecording, setIsRecording] = useState(false);
     const [isWaitingForResponse, setIsWaitingForResponse] = useState(false);
     const [error, setError] = useState(null);
+
     const mediaRecorderRef = useRef(null);
     const chunksRef = useRef([]);
 
@@ -48,28 +55,33 @@ const VoiceAssistant = ({ apiKey, endpoint = 'https://vgynj1k6fi.execute-api.us-
                     const base64Audio = reader.result.split(',')[1];
 
                     try {
-                        const response = await axios.post(endpoint, { audio: base64Audio }, {
-                            headers: {
-                                'Content-Type': 'application/json',
-                                'x-api-key': apiKey
+                        const response = await axios.post(
+                            endpoint,
+                            { audio: base64Audio },
+                            {
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                    'x-api-key': apiKey
+                                }
                             }
-                        });
+                        );
 
                         if (response.data?.transcription && onTranscriptionComplete) {
                             onTranscriptionComplete(response.data.transcription);
                         }
+
                         if (response.data?.audio) {
                             playBase64Audio(response.data.audio);
                         } else {
                             setIsWaitingForResponse(false);
                         }
                     } catch {
-                        setError("Request failed.");
+                        setError('Request failed.');
                         setIsWaitingForResponse(false);
                     }
                 };
 
-                stream.getTracks().forEach(track => track.stop());
+                stream.getTracks().forEach((track) => track.stop());
             };
 
             mediaRecorderRef.current.start();
@@ -87,17 +99,28 @@ const VoiceAssistant = ({ apiKey, endpoint = 'https://vgynj1k6fi.execute-api.us-
         }
     };
 
+    const handleClick = () => {
+        if (isRecording) {
+            stopRecording();
+        } else {
+            startRecording();
+        }
+    };
+
     return (
         <div className="relative">
             <button
-                onClick={isRecording ? stopRecording : startRecording}
+                onClick={handleClick}
                 disabled={isDisabled || isWaitingForResponse}
                 className={`
-                    p-2 rounded-full text-white
-                    ${isDisabled || isWaitingForResponse ? 'bg-gray-400 cursor-not-allowed'
-                        : isRecording ? 'bg-red-500 animate-pulse hover:bg-red-600'
-                        : 'bg-blue-500 hover:bg-blue-600'}
-                `}
+          p-2 rounded-full text-white transition
+          ${isDisabled || isWaitingForResponse
+                        ? 'bg-gray-400 cursor-not-allowed'
+                        : isRecording
+                            ? 'bg-red-500 animate-pulse hover:bg-red-600'
+                            : 'bg-blue-500 hover:bg-blue-600'
+                    }
+        `}
                 style={{
                     boxShadow: isRecording
                         ? '0 0 15px rgba(239, 68, 68, 0.5)'
@@ -105,9 +128,11 @@ const VoiceAssistant = ({ apiKey, endpoint = 'https://vgynj1k6fi.execute-api.us-
                 }}
             >
                 {isWaitingForResponse ? (
-                    <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                    <Loader2 className="h-5 w-5 animate-spin" />
+                ) : isRecording ? (
+                    <Square className="h-5 w-5" />
                 ) : (
-                    <FontAwesomeIcon icon={isRecording ? faStop : faMicrophone} className="h-5 w-5" />
+                    <Mic className="h-5 w-5" />
                 )}
             </button>
 
