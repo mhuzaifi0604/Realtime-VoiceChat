@@ -1,7 +1,7 @@
 # 🎙️ React Voice Chat Assistant
 
-[![npm version](https://badge.fury.io/js/realtime-voicechat.svg)](https://badge.fury.io/js/realtime-voicechat)
-[![Downloads](https://img.shields.io/npm/dm/realtime-voicechat.svg)](https://npmjs.org/package/realtime-voicechat)
+[![npm version](https://badge.fury.io/js/realtime-voice-ai.svg)](https://badge.fury.io/js/realtime-voice-ai)
+[![Downloads](https://img.shields.io/npm/dm/realtime-voice-ai.svg)](https://npmjs.org/package/realtime-voice-ai)
 
 A powerful, fully configurable React component that provides instant voice chat functionality powered by OpenAI's Realtime API. Instead of building voice chat from scratch, simply import and configure this component to add natural, human-like voice conversations to your application.
 
@@ -17,11 +17,11 @@ A powerful, fully configurable React component that provides instant voice chat 
 ## 📦 Installation
 
 ```bash
-npm install realtime-voicechat
+npm install realtime-voice-ai
 ```
 
 ```bash
-yarn add realtime-voicechat
+yarn add realtime-voice-ai
 ```
 
 ## 🎬 Quick Start
@@ -105,23 +105,23 @@ Choose from multiple pre-built UI designs:
 
 ### v1 - Classic Animated Blob
 Classic animated blob with pulse effects
-![UI Version 1](./uiVersions/V1.png)
+![UI Version 1](https://raw.githubusercontent.com/mhuzaifi0604/Realtime-VoiceChat/main/uiVersions/V1.png)
 
 ### v2 - Modern Gradient Blob  
 Modern gradient blob with smooth animations
-![UI Version 2](./uiVersions/V2.png)
+![UI Version 2](https://raw.githubusercontent.com/mhuzaifi0604/Realtime-VoiceChat/main/uiVersions/V2.png)
 
 ### v3 - Geometric Animated Shapes
 Geometric animated shapes with color transitions
-![UI Version 3](./uiVersions/V3.png)
+![UI Version 3](https://raw.githubusercontent.com/mhuzaifi0604/Realtime-VoiceChat/main/uiVersions/V3.png)
 
 ### v4 - Advanced Particle System
 Advanced particle system with dynamic effects
-![UI Version 4](./uiVersions/V4.png)
+![UI Version 4](https://raw.githubusercontent.com/mhuzaifi0604/Realtime-VoiceChat/main/uiVersions/V4.png)
 
 ### v5 - Advanced Wave Particle System
 Advanced particle system with dynamic effects
-![UI Version 4](./uiVersions/V5.png)
+![UI Version 5](https://raw.githubusercontent.com/mhuzaifi0604/Realtime-VoiceChat/main/uiVersions/V5.png)
 
 ###### This one is the best in my opionion 😁
 
@@ -146,7 +146,7 @@ Use your own UI component by passing it to the `customUI` prop
 ### Basic Configuration
 
 ```jsx
-import { VoiceChatTrigger } from 'realtime-voicechat';
+import { VoiceChatTrigger } from 'realtime-voice-ai';
 
 const BasicExample = () => {
   const basicConfig = {
@@ -254,7 +254,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 If you encounter any issues or have questions:
 
-- 🐛 **Open an issue** on our [GitHub repository](https://github.com/your-username/realtime-voicechat/issues)
+- 🐛 **Open an issue** on our [GitHub repository](https://github.com/mhuzaifi0604/Realtime-VoiceChat/issues)
 - 📧 **Contact directly**: [huzzaifaasim@gmail.com](mailto:huzzaifaasim@gmail.com)
 
 ---
